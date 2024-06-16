@@ -17,6 +17,7 @@ body {
     padding: 0 50px;
     align-items: center;
     width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3) ;
 }
 .nav-links {
     display: flex;
@@ -29,7 +30,19 @@ body {
     color: brown;
     overflow: hidden;
 }
-.navbar:hover {
+.navbar a {
+text-decoration: none;
+color: brown;
+}
+.dropdown-menu {
+    background-color: #f4f7fc;
+    padding: 10px;
+    list-style: none;
+    display: none;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.fa-caret-down {
     cursor: pointer;
 }
 .logo {
@@ -137,6 +150,7 @@ h1 {
     }
     .nav-container {
         position: fixed;
+        padding: 10px;
     }
     .nav-links {
         display: flex;
@@ -152,11 +166,12 @@ h1 {
         transition: transform 0.3s ease-in-out, visibility 0.3s, opacity 0.3s;
         visibility: hidden;
         opacity: 0;
-        margin-top: 80px;
+        margin-top: 90px;
         
     }
     .navbar {
         width: 100%;
+
       }
       
     .nav-links.active {
@@ -207,6 +222,19 @@ h1 {
     }
     .navbar:hover {
         cursor: pointer;
-        background-color: burlywood;
+    }
+    .dropdown-menu {
+        width: 100%;
+        position: relative;
+        border: none;
+        background-color: #f2f2f2;
+        
+    }
+    .dropdown-menu li:hover {
+        background-color: crimson;
+    }
+    
+    .dropdown-menu li:hover a {
+        color: white;
     }
 }

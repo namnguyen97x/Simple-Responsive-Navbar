@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang chủ</title>
+    <title>Home page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -15,11 +16,25 @@
             </div>
             
             <ul class="nav-links">
-                <li class="navbar" onclick="window.location.href='yourlink'">Home Page</li>
-                <li class="navbar" onclick="window.location.href='yourlink'">About Us</li>
-                <li class="navbar" onclick="window.location.href='yourlink'">Service</li>
-                <li class="navbar" onclick="window.location.href='yourlink'">Contact</li>
-                <li class="navbar" onclick="window.location.href='yourlink'">Something</li>
+                <li class="navbar"><a href="">Home Page</a></li>
+                <li class="navbar"><a href="">About Us</a></li>
+                <li class="navbar Service"><a href="">Service</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Through space</a></li>
+                        <li><a href="">Sword hero</a></li>
+                        <li><a href="">Mythicize</a></li>
+                    </ul>
+                </li>
+                <li class="navbar Contact"><a href="">Contact</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="">US</a></li>
+                        <li><a href="https://www.google.com/">Google</a></li>
+                        <li><a href="https://youtu.be/dQw4w9WgXcQ?si=S7__MHNRx2Q-g6FU">Your GF</a></li>
+                    </ul>
+                </li>
+                <li class="navbar"><a href="">Something</a></li>
                 <div class="search-area">
                     <input class="search searchbox" type="text" name="search" placeholder="Search...">
                     <button class="search btnsearch" name="btnsearch">Search</button>
