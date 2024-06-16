@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
-    font-size: 21px;
+
 
 }
 body {
@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 30px;
     align-items: center;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.3) ;
@@ -30,12 +30,12 @@ body {
 .navbar {
     display: inline-block;
     padding: 10px 15px;
-    color: brown;
+    color: black;
     overflow: hidden;
 }
 .navbar a {
 text-decoration: none;
-color: brown;
+color: black;
 }
 .dropdown-menu {
     background-color: #f4f7fc;
@@ -70,7 +70,7 @@ color: brown;
 h1 {
     font-size: 30px;
     font-weight: 600;
-    color: brown;
+    color: black;
 }
 .logoimg {
     width: 30%;
@@ -79,12 +79,16 @@ h1 {
     border-radius: 50%;
 }
 .search {
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.searchbox {
+    width: 300px;
 }
 .btnsearch {
     background-color: rgb(255, 255, 255);
-    color: brown;
+    color: black;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 20px;
 }
@@ -94,7 +98,36 @@ h1 {
     border: 1px solid rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
-
+.user-area {
+    display: block;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.user {
+    text-decoration: none;
+    color: black;
+}
+.login, .signup {
+    width: 80px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #f2f2f2; 
+    color: black;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.login:hover, .signup:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    
+}
+.login:hover a, .signup:hover a {
+    color: white;
+}
 .burger {
     display: none;
     cursor: pointer;
