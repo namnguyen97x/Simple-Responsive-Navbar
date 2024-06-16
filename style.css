@@ -18,10 +18,13 @@ body {
     align-items: center;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.3) ;
+    background-color: #f2f2f2;
 }
 .nav-links {
     display: flex;
     gap: 10px;
+    padding: 20px;
+
 }
 
 .navbar {
@@ -44,6 +47,17 @@ color: brown;
 }
 .fa-caret-down {
     cursor: pointer;
+}
+.dropdown-menu li {
+    padding: 0 10px;
+}
+.dropdown-menu li:hover {
+    background-color: crimson;
+}
+
+.dropdown-menu li:hover a {
+    color: white;
+    
 }
 .logo {
     width: 200px;
@@ -117,6 +131,23 @@ h1 {
 .btnClose:hover, .burger:hover {
     background-color: crimson;
 }
+footer {
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: #222222;
+    color: white;
+    padding: 50px 200px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer h1 {
+    color: burlywood;
+    font-size: 35px;
+}
 @media (max-width: 1200px){
     * {
         font-size: 17px;
@@ -149,8 +180,8 @@ h1 {
         font-size: 21px;
     }
     .nav-container {
-        position: fixed;
         padding: 10px;
+        position: fixed;
     }
     .nav-links {
         display: flex;
@@ -162,6 +193,7 @@ h1 {
         top: 0;
         right: 0;
         width: 100vw;
+        height: 100vh;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out, visibility 0.3s, opacity 0.3s;
         visibility: hidden;
@@ -230,11 +262,27 @@ h1 {
         background-color: #f2f2f2;
         
     }
-    .dropdown-menu li:hover {
-        background-color: crimson;
+    footer {
+        display: flex;
+        bottom: 0;
+        left: 0;
+        flex-direction: column;
+        padding: 10px;
+        
+       
     }
-    
-    .dropdown-menu li:hover a {
-        color: white;
+    footer p, footer a {
+        font-size: 14px;
     }
+    footer h2, footer h1 {
+        font-size: 20pxpx;
+    }
+    .ft-right {
+        margin-top: 20px;
+    }
+    main {
+        padding: 100px 0 20px 0;
+    }
+
 }
+
