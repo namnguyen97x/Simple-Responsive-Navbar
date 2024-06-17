@@ -31,22 +31,47 @@ body {
     display: inline-block;
     padding: 10px 15px;
     color: black;
-    overflow: hidden;
+    border-radius: 5px;
+}
+.navbar:hover {
+    background-color: #313131;
+    color: white;
 }
 .navbar a {
 text-decoration: none;
 color: black;
 }
+.navbar:hover a {
+    color: white;
+}
 .dropdown-menu {
-    background-color: #f4f7fc;
+    background-color: #313131;
     padding: 10px;
     list-style: none;
     display: none;
     position: absolute;
     border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 15px 0;
+    background-color: #222222;
+}
+.navbar--dropdown.active a {
+    color: white;
+}
+.navbar--dropdown.active {
+    background-color: #313131;
+    color: white;
+}
+.dropdown-menu a {
+    color: white;
 }
 .fa-caret-down {
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
 }
 .dropdown-menu li {
     padding: 0 10px;
@@ -288,12 +313,14 @@ footer h1 {
     .navbar:hover {
         cursor: pointer;
     }
-    .dropdown-menu {
+    .navbar:hover .dropdown-menu {
         width: 100%;
         position: relative;
         border: none;
-        background-color: #f2f2f2;
         
+    }
+    .dropdown-menu {
+        position: relative;
     }
     footer {
         display: flex;

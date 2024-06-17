@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnClose = document.querySelector('.btnClose');
   const caretdowns = document.querySelectorAll('.fa-caret-down');
   const dropdowns = document.querySelectorAll('.dropdown-menu');
+  const navbardropdowns = document.querySelectorAll('.navbar--dropdown');
 
   burger.addEventListener('click', () => {
     burger.classList.toggle('hiden');
@@ -20,10 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
   caretdowns.forEach((caretdown, index) => {
     caretdown.addEventListener('click', () => {
       const dropdown = dropdowns[index];
+      const navbar = navbardropdowns[index];
+      caretdown.classList.toggle('rotate-180');
       if (dropdown.style.display === 'block') {
         dropdown.style.display = 'none';
+        navbar.classList.remove('active');
       } else {
         dropdown.style.display = 'block';
+        navbar.classList.add('active');
       }
     });
   });
